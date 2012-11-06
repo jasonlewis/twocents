@@ -82,7 +82,7 @@ class Article extends Meta {
 		// to be part of the intro.
 		if (Str::lower($this->intro) == 'yes')
 		{
-			preg_match('/(.*?)<h(1|2|3|4|5)>/s', $this->body, $matches);
+			preg_match('/(.*?)#/s', $this->body, $matches);
 
 			if (empty($matches))
 			{
