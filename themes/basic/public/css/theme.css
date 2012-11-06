@@ -1,0 +1,321 @@
+body {
+	padding: 0;
+	margin: 26px 0 0;
+	font-family: "Helvetica", "Helvetica Neue", Arial, sans-serif;
+	font-size: 14px;
+	color: #333;
+	line-height: 1.6em;
+}
+
+a {
+	text-decoration: underline;
+	color: #db5757;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+#container {
+	margin: 0 16%;
+}
+
+#header {
+	float: left;
+	width: 100%;
+	margin: 0 0 50px;
+}
+
+#header h1 {
+	float: left;
+	font-family: "Ubuntu", serif;
+	font-size: 26px;
+	margin: 6px 0;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+#header h1 a {
+	text-decoration: none;
+}
+
+#header h1 span {
+	font-weight: bold;
+}
+
+#header ul {
+	float: right;
+	margin: -3px 0 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+}
+
+#header ul li {
+	float: left;
+	margin: 0 0 0 6px;
+}
+
+#header ul li a {
+	display: block;
+	padding: 5px 11px;
+	color: #fff;
+	text-decoration: none;
+	background-color: #333;
+}
+
+#header ul li.selected a,
+#header ul li a:hover {
+	background-color: #db5757;
+}
+
+#main {
+	float: right;
+	width: 100%;
+}
+
+#sidebar + #main {
+	width: 66%;
+}
+
+#sidebar {
+	float: left;
+	width: 30%;
+	margin: 0 4% 0 0;
+}
+
+#sidebar .section {
+	margin: 0 0 30px;
+	position: relative;
+}
+
+#sidebar .section > h2 {
+	font-family: "Ubuntu", serif;
+	font-weight: bold;
+	font-size: 18px;
+	margin: 0 0 8px;
+	padding: 0 0 8px;
+	text-transform: uppercase;
+	border-bottom: 3px solid #333;
+	display: inline-block;
+}
+
+#sidebar .section > h2 + * {
+	border-top: 3px solid #eee;
+	margin: -11px 0 0;
+	padding: 8px 0 0;
+}
+
+#sidebar .section dl dt {
+	font-weight: bold;
+}
+
+#sidebar .section dl dd {
+	margin: 0 0 6px;
+}
+
+#sidebar .section .gravatar {
+	position: absolute;
+	right: 0;
+	top: 42px;
+	border: 1px solid #eee;
+	padding: 2px;
+}
+
+.spacer {
+	height: 1px;
+	width: 20%;
+	background-color: #efefef;
+	margin: 70px auto;
+}
+
+#articles .article h1,
+#articles .article h2,
+#articles .article h3,
+#articles .article h4,
+#articles .article h5 {
+	font-family: "Ubuntu", serif;
+	font-weight: normal;
+	font-size: 28px;
+	margin: 24px 0;
+	text-transform: uppercase;
+}
+
+#articles .article h2 { font-size: 28px; }
+#articles .article h3 { font-size: 24px; }
+#articles .article h4 { font-size: 20px; }
+#articles .article h5 { font-size: 16px; }
+
+#articles .article .title > a {
+	text-decoration: none;
+}
+
+#articles .article .title {
+	margin-top: 0;
+}
+
+#articles .article {
+	margin: 0 0 46px;
+}
+
+#articles .article:last-child {
+	margin: 0;
+}
+
+#articles .article > h3.title {
+	color: #444;
+	margin: 0 0 6px;
+}
+
+#articles .article > h3.title > a {
+	color: #444;
+}
+
+#articles .article > .meta {
+	color: #999;
+	font-size: 12px;
+}
+
+#articles .article > h2 + meta {
+	border-bottom: 1px dashed #eee;
+}
+
+#articles .article > .meta a {
+	color: #999;
+}
+
+#articles .article > .meta > .date {
+	background-color: #eee;
+	display: inline-block;
+	padding: 0px 3px;
+	box-shadow: inset 0 1px 1px #ccc;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#articles .article p {
+	margin: 8px 0;
+}
+
+#articles .article .body {
+	padding: 18px 0 0;
+}
+
+#articles .article a.read-more {
+	display: inline-block;
+	color: #fff;
+	background-color: #333;
+	padding: 5px 11px;
+	text-decoration: none;
+}
+
+#articles .article a.read-more:hover {
+	background-color: #db5757;
+}
+
+#articles .article p > code {
+	display: inline-block;
+	font-family: Menlo,Monaco,Consolas,monospace;
+	border: 1px solid #efefef;
+	background-color: #fefefe;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	font-size: 11px;
+	color: #666;
+	padding: 3px;
+	line-height: 1;
+}
+
+#articles #disqus_thread {
+	margin: 18px 0 0;
+}
+
+.com {
+    color: #969896;
+}
+
+.lit {
+    color: #DE935F;
+}
+
+.pun, .opn, .clo {
+    color: #d9dcda;
+}
+
+.fun {
+    color: #DC322F;
+}
+
+.str, .atv {
+    color: #B5BD68;
+}
+
+.kwd, .linenums .tag {
+    color: #E85274;
+}
+
+.typ, .atn, .dec, .var {
+    color: #81A2BE;
+}
+
+.pln {
+    color: #d9dcda;
+}
+
+.prettyprint {
+	background-color: #333;
+	font-family: Menlo, Monaco, Consolas, monospace;
+    max-height: 450px;
+    overflow: auto;
+    padding: 20px;
+}
+
+.prettyprint.linenums {
+    box-shadow: 70px 0 0 #FFFFFF inset, 71px 0 0 #F1F1F1 inset;
+}
+
+ol.linenums {
+    margin: 0 0 0 50px;
+}
+
+ol.linenums li {
+    color: #BEBEC5;
+    line-height: 21px;
+    margin: 0;
+    padding-left: 30px;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+
+ol.linenums li:hover {
+    background-color: #F3F3F3;
+}
+
+.prettyprint.linenums {
+	box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+}
+
+.prettyprint.linenums li {
+	color: #F9F9F9 !important;
+	padding-left: 0 !important;
+	font-size: 12px !important;
+}
+
+ol.linenums {
+	margin: 0 !important;
+}
+
+#footer {
+	clear: both;
+	padding: 24px 0;
+	font-size: 12px;
+	color: #888;
+}
+
+#footer p {
+	margin: 0;
+	float: right;
+}
