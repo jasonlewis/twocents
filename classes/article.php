@@ -87,9 +87,9 @@ class Article extends Meta {
 			if (empty($matches))
 			{
 				preg_match('/(.*?)@more/s', $this->body, $matches);
-
-				$this->body = str_replace('@more', '', $this->body);
 			}
+
+			$this->body = str_replace('@more', '', $this->body);
 
 			$this->intro = ( ! empty($matches) ? $matches[1] : $this->body);
 		}
