@@ -8,9 +8,9 @@
 			By {{ $article->author->name }} on <span class="date">{{ date('j F, Y', strtotime($article->date)) }}</span>
 		</div>
 
-		<p>
+		<div class="body">
 			{{ $article->body }}
-		</p>
+		</div>
 	</div>
 
 	@if(Config::get('twocents::twocents.disqus.enabled'))
