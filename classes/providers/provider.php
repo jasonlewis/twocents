@@ -251,4 +251,25 @@ abstract class Provider {
 		return str_replace(array_keys($patterns), array_values($patterns), $method);
 	}
 
+	/**
+	 * Determine if an article is ignored.
+	 * 
+	 * @param  string  $name
+	 * @return bool
+	 */
+	protected function isIgnored($name)
+	{
+		foreach (Config::get('twocents::twocents.ignored_articles') as $ignored)
+		{
+			$pattern = str_replace('*', '(.*)', $ignored).'\z';
+
+			if ((bool) preg_match('#'.$pattern.'#', $name))
+			{
+				return true;
+			}
+		}
+
+		return false;
+	}
+
 }
